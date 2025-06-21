@@ -8,6 +8,8 @@ import Comp1 from "./components/Comp1";
 import ShowRestClass from "./components/ShowRestClass";
 import AddRestClass from "./components/AddRestClass";
 import Comp11 from "./components/Comp11";
+import Comp21 from "./components/Comp21";
+import Comp31 from "./components/Comp31";
 
 const projectRoute = (
     <BrowserRouter>
@@ -21,6 +23,8 @@ const projectRoute = (
                 <Route path="showRestClass" element={<ShowRestClass />} />
                 <Route path="addRestClass" element={<AddRestClass />} />
                 <Route path="search" element={<Comp11 />} />
+                <Route path="error" element={<Comp21 />} />
+                <Route path="statelift" element={<Comp31 />} />
             </Route>
         </Routes>
   </BrowserRouter>

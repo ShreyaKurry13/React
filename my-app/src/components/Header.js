@@ -36,6 +36,12 @@ export default function Header() {
             <Link class="nav-link" to="/search">Link</Link>
           </li>
           <li class="nav-item">
+            <Link class="nav-link" to="/error">Error</Link>
+          </li>
+          <li class="nav-item">
+            <Link class="nav-link" to="/statelift">State Lift</Link>
+          </li>
+          <li class="nav-item">
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
           </li>
         </ul>
