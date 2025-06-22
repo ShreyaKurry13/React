@@ -1,25 +1,27 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux'
 
+export default function Comp35() {
 
-export default function Comp33(props) {
-
+    var categoryvalue = useSelector(state=> state.category.categoryName)
+    
     var[api,setApi] = useState([]);
+
     useEffect(()=>{
-        console.log('api',props.p2);
-        var apiPath = `https://fakestoreapi.com/products/category/${props.p2}`
-        console.log();
+        var apiPath = `https://fakestoreapi.com/products/category/${categoryvalue}`
+        console.log(apiPath);
         
         axios.get(apiPath).then(res=>{
             console.log(res.data);
             setApi(res.data);
         });
-      },[props.p2]);
+      },[categoryvalue]);
 
   return (
     <div>
-      Comp33 {props.p2}
-        <div className='row  border border-5'>
+        <h1>From Redux , {categoryvalue}</h1>
+        <div className='row border border-5'>
         {
           api && api.map(val => 
             <div className='col-3'>

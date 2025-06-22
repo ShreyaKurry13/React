@@ -1,7 +1,13 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
 import { Link } from "react-router";
 
 export default function Header() {
+
+  let result = useSelector(state=> state.cart.cartData)
+  console.log(result);
+  console.log(result.length);
+
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -40,6 +46,12 @@ export default function Header() {
           </li>
           <li class="nav-item">
             <Link class="nav-link" to="/statelift">State Lift</Link>
+          </li>
+          <li class="nav-item">
+            <Link class="nav-link" to="/products">Products</Link>
+          </li>
+          <li class="nav-item">
+            <Link class="nav-link" to="/cart">Cart({result.length})</Link>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>

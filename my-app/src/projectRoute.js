@@ -10,6 +10,8 @@ import AddRestClass from "./components/AddRestClass";
 import Comp11 from "./components/Comp11";
 import Comp21 from "./components/Comp21";
 import Comp31 from "./components/Comp31";
+import Cart from "./components/Cart";
+import Products from "./components/Products";
 
 const projectRoute = (
     <BrowserRouter>
@@ -25,6 +27,8 @@ const projectRoute = (
                 <Route path="search" element={<Comp11 />} />
                 <Route path="error" element={<Comp21 />} />
                 <Route path="statelift" element={<Comp31 />} />
+                <Route path="products" element={<Products />} />
+                <Route path="cart" element={<Cart />} />
             </Route>
         </Routes>
   </BrowserRouter>
