@@ -6,11 +6,12 @@ import AddCars from "./components/AddCars";
 const projectRoute = (
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<App/>}/>
-            <Route path="show-cars" element={<ShowCars/>}/>
-            <Route path="add-cars" element={<AddCars/>}/>
+            <Route path="/" element={<App/>}>
+                <Route path="show-cars" element={<ShowCars/>}/>
+                <Route path="add-cars" element={<AddCars/>}/>
+            </Route>
         </Routes>
     </BrowserRouter>
-)
+);
 
 export default projectRoute;
