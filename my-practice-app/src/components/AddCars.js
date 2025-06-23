@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useRef } from 'react'
+import { useNavigate } from 'react-router'
 
 export default function AddCars() {
 
@@ -8,6 +9,8 @@ export default function AddCars() {
   const ref3 = useRef();
   const ref4 = useRef();
   const ref5 = useRef();
+
+  let navigate = useNavigate();
 
   function addRecord(){
     // alert();
@@ -23,6 +26,7 @@ export default function AddCars() {
     var result = axios.post('http://localhost:8989/cars-api',dataStore);
     console.log(result);
     alert("Car Added Successfully");
+    navigate("/show-cars");
   }
 
   return (

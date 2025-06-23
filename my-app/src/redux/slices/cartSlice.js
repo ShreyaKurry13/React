@@ -16,7 +16,7 @@ export const cartSlice = createSlice({
    removeFromCart: (state,action) => {
         console.log('removeFromCart called');
         console.log(action.payload);
-        state.cartData = state.cartData.filter( obj=> obj.id != action.payload )
+        state.cartData = state.cartData.filter( obj=> obj.id !== action.payload )
    }
   },
 })

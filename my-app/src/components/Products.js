@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { addInCart } from '../redux/slices/cartSlice';
@@ -34,7 +35,7 @@ export default function Products() {
         {
           data && data.map(val => 
             <div className='col-3'>
-                <img className='img-fluid' src={val.image}/>
+                <img className='img-fluid' src={val.image} />
                 <p>{val.title}</p>
                 <p>
                     <button className='btn btn-primary' onClick={() =>{ myFunc(val) }}>Add to Cart</button>
