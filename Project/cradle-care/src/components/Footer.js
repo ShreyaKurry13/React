@@ -2,6 +2,16 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div>Footer</div>
+    <div
+      style={{
+        minHeight: '100vh',
+        padding: '120px 40px',
+        backgroundColor: '#000000',
+        color: 'white',
+        textAlign: 'center'  // Optional: center the text
+      }}
+    >
+      Footer
+    </div>
   )
 }

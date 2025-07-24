@@ -1,21 +1,22 @@
-import App from "./components/App"
-import {BrowserRouter, Route, Routes} from 'react-router'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router";
+import App from "./components/App";
+import Home from "./components/Home";
 import Prime from "./components/Prime";
 import ChatBot from "./components/ChatBot";
 import Sos from "./components/Sos";
-import Home from "./components/Home";
 
 const projectRoute = (
-    <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<App/>}>
-                <Route path="/home" element={<Home/>}/>
-                <Route path="/prime" element={<Prime/>}/>
-                <Route path="/bot" element={<ChatBot/>}/>
-                <Route path="/sos" element={<Sos/>}/>
-            </Route>
-        </Routes>
-    </BrowserRouter>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />}>
+        <Route index element={<Home />} />
+        <Route path="prime" element={<Prime />} />
+        <Route path="chatbot" element={<ChatBot />} />
+        <Route path="sos" element={<Sos />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
 );
 
 export default projectRoute;

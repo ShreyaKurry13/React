@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router"; 
+import { Link } from "react-scroll"; 
 
 export default function Header() {
   const navbarStyle = {
@@ -11,49 +11,35 @@ export default function Header() {
     borderBottom: '1px solid rgba(255, 255, 255, 0.2)'
   };
 
-  const backgroundStyle = {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    height: '100%',
-    width: '100%',
-    backgroundImage: 'url("https://i.pinimg.com/736x/00/6f/75/006f7543d5a9187db93d2530cee4e9b7.jpg")',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    opacity: 0.5,
-    zIndex: 0
-  };
-
+  // const navigate = useNavigate();
   
-
   return (
-    <>
-    <div style={backgroundStyle}>
+    <> 
     <nav style={navbarStyle} className="navbar navbar-expand-lg">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/home">
+        <Link className="navbar-brand" to="/">
           Cradle Care
         </Link>
         
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/home">
+              <Link className="nav-link active" aria-current="page" to="home">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/prime">
+              <Link className="nav-link" to="/">
                 Prime
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/bot">
+              <Link className="nav-link" to="/">
                ChatBot
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="#">
+              <Link className="nav-link" to="/">
                 SOS
               </Link>
             </li>
@@ -67,10 +53,6 @@ export default function Header() {
         </div>
       </div>
     </nav>
-
-    
-
-    </div>
 
     </>
   );

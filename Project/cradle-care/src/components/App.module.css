@@ -1,0 +1,12 @@
+* {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("https://i.pinimg.com/736x/00/6f/75/006f7543d5a9187db93d2530cee4e9b7.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 0;
+}
