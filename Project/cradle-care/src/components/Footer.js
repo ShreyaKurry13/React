@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div
       style={{
-        minHeight: '100vh',
+        minHeight: '50vh',
         padding: '120px 40px',
         backgroundColor: '#000000',
         color: 'white',

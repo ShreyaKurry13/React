@@ -17,6 +17,8 @@ export default function Prime() {
         padding: '40px',
         textAlign: 'center'
       }}
+
+      id='prime'
     >
       Prime
     </div>

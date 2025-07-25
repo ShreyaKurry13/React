@@ -15,6 +15,8 @@ export default function Home() {
         padding: '40px',
         textAlign: 'center'
       }}
+
+      id='home'
     >
       Home
     </div>

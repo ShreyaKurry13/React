@@ -3,6 +3,9 @@ import React from 'react';
 export default function ChatBot() {
   return (
     <div
+
+      id='bot'
+      
       style={{
         position: 'fixed',
         bottom: '20px',

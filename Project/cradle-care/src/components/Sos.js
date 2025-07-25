@@ -18,6 +18,8 @@ export default function Sos() {
         padding: '40px',
         animation: 'pulse 2s infinite'
       }}
+
+      id='sos'
     >
       Sos
     </div>
